@@ -5,6 +5,8 @@ export default function (colors) {
     if (color.includes('#')) {
       const coloredBoldChalk = chalk.hex(color).bold(color);
       console.log(coloredBoldChalk);
+    } else {
+      console.log('Unsupported color format.');
     }
   }
 }
